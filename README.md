@@ -47,6 +47,6 @@ PATH="C:\Program Files\MATLAB\MATLAB Compiler Runtime\v83\runtime\win64;C:\Progr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 
