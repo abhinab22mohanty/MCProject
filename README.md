@@ -1,87 +1,52 @@
 # BrainNet- An Authentication system using Brain Signals for Android Devices
 
-One Paragraph of project description goes here
+User is identified via Identification process first and later authenticated using 4 different machie learning models (SVM, KNN, Naive Bayes, Random Forest).
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Installation Required:
+1. Java (jdk-1.8, jre8 and java ee)
+2. Tomcat Servers (version 8.5 <to act as Fog Server> and version 9.0 <to act as Cloud Server with port forwarding> )
+3. Android SDK
+4. MATLAB Runtime (MCR version 96) 
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
+Set Environment variables for Java
 ```
-Give examples
+JAVA_HOME="C:\Program Files\Java\jdk1.8.0_65"
 ```
 
+Set Environment variables for Android SDK
+```
+ANDROID_SDK_HOME="C:\Android"
+```
+It will mostly be set sutomatically if you install Android Studio and follow all required instructions.
+
+Set Path for MATLAB Runtime and MATLAB Compiler Runtime
+```
+PATH="C:\Program Files\MATLAB\MATLAB Compiler Runtime\v83\runtime\win64;C:\Program Files\MATLAB\MATLAB Runtime\v92\runtime\win64"
+```
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+1. Clone all files into a local repository
+2. Run the code in Project Folder in Android Studio or run the apk on any android device.
+3. Run the code in MCCloudServer and CSEMCServer on eclipse jee on corresponding Tomcat Servers. (Read README.txt inside code Folder for further clarity)
+4. Forward the port of any one server to act as a cloud server (You can use tools like ngrok.exe)
+5. Change String REGISTRY_DIRECTORY to point to the path of the Registered Users Folder onn your system.(Add edf brain signal files for registered users in the folder)
 
-Say what the step will be
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Abhinab Mohanty** - *Initial work* 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
