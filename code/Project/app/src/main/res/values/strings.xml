@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BrainetProject</string>
+
+    <string-array name="servers">
+        <item>Fog</item>
+        <item>Cloud</item>
+    </string-array>
+
+    <string-array name="classifiers">
+        <item>Naive Bayes</item>
+        <item>KNN</item>
+        <item>SVM</item>
+        <item>Random Forest</item>
+    </string-array>
+</resources>
